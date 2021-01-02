@@ -9,5 +9,5 @@
             echo "No Service found"
          fi
     - name: deploy app
-      command: docker service create --name mysvc --replicas 1 -p 9080:8080 dockerazhar/sampleapp:{{ build }}
+      command: docker service create --name mysvc --replicas 1 -p 9080:80 dockerazhar/sampleapp:{{ build }}
 
